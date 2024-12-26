@@ -5,7 +5,11 @@ module.exports = {
     "./views/*.ejs"
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '32rem',
+      }
+    },
   },
   plugins: [],
   screens: {
