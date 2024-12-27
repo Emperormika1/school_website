@@ -4,12 +4,14 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="./owlcarousel/dist/owl.carousel.min.js"></script>
+<script src="./magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
     $(document).ready(function(){
         AOS.init();
+        $('.image-link').magnificPopup({type:'image'});
         $(".owl-carousel-1").owlCarousel({
             loop :true,
             autoplay:true,
