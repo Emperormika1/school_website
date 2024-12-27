@@ -82,3 +82,18 @@ input:checked ~ .accordion-content {
 }
 
 
+ul.slide_bar {
+  list-style-type: none; /* ยกเลิกการใช้จุดหรือขีดหน้า */
+  padding-left: 0; /* กำหนดให้ไม่มีระยะห่างซ้าย */
+}
+
+ul.slide_bar li {
+  position: relative; /* เพื่อให้สามารถใช้ :before ได้ */
+  padding-left: 20px; /* ระยะห่างจากขีด */
+}
+
+ul.slide_bar li::before {
+  content: "-"; /* ใส่ขีดหน้าข้อความ */
+  position: absolute;
+  left: 0; /* จัดขีดให้อยู่ซ้ายสุด */
+}
