@@ -32,7 +32,25 @@
         $(".owl-carousel-2").owlCarousel({
             loop :true,
             autoplay:true,
+            margin: 5,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                    margin: 5,
+                },
+          
+            }
+
+        });
+        $(".owl-carousel-3").owlCarousel({
+            loop :true,
+            autoplay:true,
             items:1,
+
 
         });
     });
