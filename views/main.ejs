@@ -937,23 +937,43 @@
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
 
+                        <%results[5].indicator.forEach((indicators)=>{%>
+                            <%count_accordion++%>
+                            <div class="accordion">
+                                <input class="accordion-input" type="radio" name="radio-a" id="check<%=count_accordion%>">
+                                <label class="accordion-label" for="check<%=count_accordion%>">
+                                    <%=indicators.indicator_key%>
+                                </label>
+                                <div class="accordion-content">
 
-                        <div class="accordion">
-                            <input class="accordion-input" type="radio" name="radio-a" id="check">
-                            <label class="accordion-label" for="check">
+                                    <ul class="slide_bar text-lg leading-relaxed">
+                                        <% indicators.indicator_content.forEach((indicator_content,index)=>{%>
+                                            <div class="flex gap-x-2">
+                                                <li>
+                                                    <%=indicator_content%>
+                                                </li>
+                                                <%if (session.token != undefined) {%>
+                                                    <div class="flex gap-x-2">
+                                                        <a href="/editcontent/indicator_content/<%=indicator_content%>/<%=index%>/2"><i
+                                                                class="fa-solid fa-pen-to-square text-blue-600"></i></a>
+                                                        <a href="/deletecontent"><i class="fa-solid fa-trash text-red-600"></i></a>
+                                                    </div>
+                                                <%}%>
+                                            </div>
+                                        <%})%>
+                                        <%if (session.token != undefined) {%>
+                                            <form action="/additem" method="get">
+                                                <button type="submit" class="focus:outline-none text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                    เพิ่มรายการ
+                                                </button>                               
+                                            </form>
+                                        <%}%>
+                                    </ul>
 
-                            </label>
-                            <div class="accordion-content">
-
-                                <ul class="slide_bar text-lg leading-relaxed">
-                                    <li>
-
-                                    </li>
-                                </ul>
-
+                                </div>
                             </div>
-                        </div>
-
+                        <%})%>
 
                     </div>
                 </div>
