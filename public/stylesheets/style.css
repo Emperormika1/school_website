@@ -3,10 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Serif Thai", serif;
+
 }
 
-input {
+body,* {
+  font-family: "Noto Serif Thai", serif;
+
+}
+
+.login-text {
+  font-family: "Exo 2", serif;
+}
+
+input.accordion-input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -15,7 +24,7 @@ input {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-
+  max-width: 100%;
   margin:0 auto;
 }
 .accordion {
@@ -62,11 +71,11 @@ input {
   font-size: 18px;
 }
 
-input:checked + .accordion-label::after {
+input.accordion-input:checked + .accordion-label::after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-input:checked ~ .accordion-content {
+input.accordion-input:checked ~ .accordion-content {
   max-height: 100vh;
   padding: 16px;
 }
