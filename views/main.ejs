@@ -102,7 +102,7 @@
             </div>
         </div>
         <!-- เนื้อหา video แนะนำโรงเรียน -->
-        <div class="bg-white container mx-auto p-2 rounded-lg">
+        <div class="bg-white container mx-auto p-2 rounded-lg"  data-aos="fade-up">
             <div class="mb-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full p-4 rounded-lg text-center">
                 <h1 class="text-3xl text-white">VTR แนะนำโรงเรียนสารสิทธิ์พิทยาลัย</h1>
                 <h3 class="text-lg text-white">VTR แนะนำโรงเรียนสารสิทธิ์พิทยาลัย ซึ่งมีรายละเอียด
@@ -119,18 +119,18 @@
 
     <!-- การศึกษษปฐมวัย -->
     <section id="first_page">
-        <div class="flex flex-col md:flex-row justify-center items-center mt-8 gap-y-5 p-8 md:gap-x-8"
-            data-aos="zoom-in">
-            <div class="text-blue-600 text-center">
+        <div class="flex flex-col md:flex-row justify-center items-center mt-8 gap-y-5 p-8 md:gap-x-8"> 
+            <!-- data-aos="zoom-in" -->
+            <div class="text-blue-600 text-center" data-aos="fade-down">
                 <h1 class="text-5xl mb-3">การศึกษาปฐมวัย</h1>
                 <h3 class="text-2xl">เอกสารประกอบการประกันคุณภาพภายนอก ของโรงเรียนสารสิทธิ์พิทยาลัย การศึกษาปฐมวัย</h3>
             </div>
             <div>
-                <img class="w-[160px]" src="https://thumb.ac-illust.com/1f/1f0cc5ce78768305e4ea272e1f8f8707_t.jpeg"
+                <img class="w-[160px]" data-aos="flip-up" src="https://thumb.ac-illust.com/1f/1f0cc5ce78768305e4ea272e1f8f8707_t.jpeg"
                     alt="">
             </div>
             <div>
-                <div class="accordion-wrapper w-120">
+                <div class="accordion-wrapper w-120" data-aos="fade-down">
                     <% let count_accordion = 0 %>
                     <%results.forEach((standard)=>{%>
                         <%if (standard.data_section == 1)  {%>
@@ -181,7 +181,8 @@
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
 
                 <div class="border-solid border-2 border-gray-300  rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-down-right">
+                data-aos="zoom-in-up">
+                    <!-- data-aos="fade-down-right" -->
                     <div class="mb-5 text-center">
                         <h1 class="text-4xl">VTR ประกอบการพิจารณา</h1>
                         <h1>มาตรฐานที่ 1ผลลัพธ์คุณภาพของเด็กปฐมวัย ตัวชี้วัดที่ 1.1 , ตัวชี้วัดที่ 1.2 , ตัวชี้วัดที่
@@ -196,7 +197,8 @@
                 </div>
 
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-down-left">
+                data-aos="zoom-in-up">
+                    <!-- data-aos="fade-down-left" -->
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
                         <%results[0].indicator.forEach((indicators)=>{%>
@@ -273,7 +275,8 @@
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
 
                 <div class="border-solid border-2 border-gray-300  rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-down-right">
+                >
+                <!-- data-aos="zoom-in-up" -->
                     <div class="mb-5">
                         <h1 class="text-4xl text-center mb-3">วิสัยทัศน์พันธกิจ และค่านิยมของสถานศึกษา</h1>
                         <li>วิสัยทัศน์(Dropdown!!)</li>
@@ -353,7 +356,8 @@
                 </div>
 
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-down-left">
+                data-aos="zoom-in-up">
+ 
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
 
@@ -412,7 +416,8 @@
 
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-right">
+                    >
+                    <!-- data-aos="fade-up-right" -->
                     <h1 class="text-lg md:text-4xl text-center">ภาพกิจกรรมประกอบการพิจารณา</h1>
                     <!-- carousel -->
                     <div class="owl-carousel owl-carousel-2 owl-theme">
@@ -428,7 +433,8 @@
 
 
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-left">
+                    >
+                    <!-- data-aos="fade-up-left" -->
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
 
@@ -477,7 +483,8 @@
                     <h1 class="text-2xl mb-5">ผลที่เกิดจากการเรียนรู้ของนักเรียน</h1>
 
                     <div class="md:flex md:justify-center">
-                        <div class="grid grid-cols-1 gap-5  md:grid-cols-4 md:gap-12" data-aos="fade-down">
+                        <div class="grid grid-cols-1 gap-5  md:grid-cols-4 md:gap-12" > 
+                            <!-- data-aos="fade-down" -->
                             <!-- cards -->
                             <div
                                 class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -579,7 +586,8 @@
 
     <section id="second_page">
         <div class="flex flex-col md:flex-row justify-center items-center mt-8 gap-y-5 p-8 md:gap-x-8"
-            data-aos="zoom-in">
+            >
+            <!-- data-aos="zoom-in" -->
             <div class="text-blue-600 text-center">
                 <h1 class="text-5xl mb-3">การศึกษาขั้นพื้นฐาน</h1>
                 <h3 class="text-2xl">เอกสารประกอบการประกันคุณภาพภายนอก รอบที่ 5 ของโรงเรียนสารสิทธิ์พิทยาลัย
@@ -640,7 +648,8 @@
 
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-right">
+                    >
+                    <!-- data-aos="fade-up-right" -->
                     <h1 class="text-lg md:text-4xl text-center">ภาพกิจกรรมประกอบการพิจารณา</h1>
                     <!-- carousel -->
                     <div class="owl-carousel owl-carousel-2 owl-theme">
@@ -653,7 +662,8 @@
                     </div>
                 </div>
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-left">
+                    >
+                    <!-- data-aos="fade-up-left" -->
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
                     
@@ -700,7 +710,8 @@
                 แฟ้มสะสมผลงานผู้เรียน (Portfolio)
             </div>
             <div class="md:flex md:justify-center">
-                <div class="grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-12 mb-8" data-aos="fade-down">
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-4 md:gap-12 mb-8" >
+                    <!-- data-aos="fade-down" -->
                     <div class="max-w-sm rounded overflow-hidden shadow-lg">
                         <img class="w-full"
                             src="https://watermark.lovepik.com/photo/20211130/large/lovepik-pupils-teaching-outside-to-play-picture_501290020.jpg"
@@ -846,7 +857,8 @@
 
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-right">
+                    >
+                    <!-- data-aos="fade-up-right" -->
                     <h1 class="text-xl text-center mb-5">วิสัยทัศน์พันธกิจ และค่านิยมของสถานศึกษา</h1>
                     <li>วิสัยทัศน์(DropDown!!!)</li>
                     <li>ปรัชญา(Dropdown!!!)</li>
@@ -866,7 +878,8 @@
                     <!----------------------- -->
                 </div>
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-left">
+                    >
+                    <!-- data-aos="fade-up-left" -->
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
                         <%results[4].indicator.forEach((indicators)=>{%>
@@ -917,7 +930,8 @@
 
             <div class="md:flex gap-x-2 px-3 py-3 mb-8">
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-right">
+                    >
+                    <!-- data-aos="fade-up-right" -->
                     <h1 class="text-lg md:text-2xl text-center">เกียรติบัตร รางวัลต่างๆ</h1>
                     <!-- carousel -->
                     <div class="owl-carousel owl-carousel-2 owl-theme">
@@ -933,7 +947,8 @@
 
 
                 <div class="border-solid border-2 border-gray-300 rounded-lg md:w-1/2 p-4 shadow-lg bg-gray-50"
-                    data-aos="fade-up-left">
+                    >
+                    <!-- data-aos="fade-up-left" -->
                     <h1 class="text-lg md:text-4xl text-center mb-3">ข้อมูลประกอบการพิจารณา</h1>
                     <div class="accordion-wrapper w-full">
 
